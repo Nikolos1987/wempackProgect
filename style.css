@@ -1,3 +1,7 @@
+@font-face {
+    font-family: "Roboto-boldItalic";
+    src: url("files/fonts/Roboto-BoldItalic.ttf");
+  }
 body{
 height: 100vh;
 margin: 0;
@@ -39,7 +43,7 @@ h1{
     width: 200px;
     height: 200px;
     border-radius: 10px;
-    background-image: url(files/assets/rainy-bg.jpg);
+    background-image: url(files/assets/rain-bg.jpg);
     background-size: 200%;
 
 }
@@ -56,4 +60,12 @@ h1{
  }
 .wrapper{
     display: flex;
+}
+.range{
+    display: none;
+}
+H1{
+    font-family: "Roboto-boldItalic";
+    color: orange;
+  
 }

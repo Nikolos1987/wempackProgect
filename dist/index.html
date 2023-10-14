@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="style.css">
   <title>Document</title>
 <script defer src="bundle.js"></script></head>
 
@@ -17,19 +17,19 @@
       <div>
         <button class="summer" data-name="summer"></button>
         <div class="slider">
-          <input type="range" id="fader" min="0" max="100" value="90" step="1" oninput="outputUpdate(value)">
+          <input class="range" type="range" id="fader" min="0" max="100" value="90" step="1" oninput="outputUpdate(value)">
         </div>
       </div>
       <div>
         <button class="rain" data-name="rain"></button>
         <div class="slider">
-          <input type="range" id="fader" min="0" max="100" value="100" step="1" oninput="outputUpdate(value)">
+          <input class="range" type="range" id="fader" min="0" max="100" value="100" step="1" oninput="outputUpdate(value)">
         </div>
       </div>
       <div>
         <button class="winter" data-name="winter"></button>
         <div class="slider">
-          <input type="range" id="fader" min="0" max="100" value="100" step="1" oninput="outputUpdate(value)">
+          <input class="range" type="range" id="fader" min="0" max="100" value="100" step="1" oninput="outputUpdate(value)">
         </div>
       </div>
       </div>
@@ -37,7 +37,7 @@
 
 
 
-    <script src="dist/bundle.js"></script>
+    <script src="index.js"></script>
 </body>
 
 </html>
