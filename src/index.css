@@ -1,6 +1,6 @@
 @font-face {
     font-family: "Roboto-boldItalic";
-    src: url("files/fonts/Roboto-BoldItalic.ttf");
+    src: url("../files/fonts/Roboto-BoldItalic.ttf");
   }
 body{
 height: 100vh;
@@ -12,7 +12,7 @@ width: 100%;
 .blur{
     width: 100%;
     height: 100%;
-    background:url("files/assets/summer-bg.jpg");
+    background:url("../files/assets/summer-bg.jpg");
    background-size: cover;
    background-repeat: no-repeat; 
    position:relative;
@@ -33,7 +33,7 @@ h1{
     width: 200px;
     height: 200px;
     border-radius: 10px;
-    background-image: url(files/assets/summer-bg.jpg);
+    background-image: url("../files/assets/summer-bg.jpg");
  background-size: 200%;
  background-repeat: no-repeat; 
  
@@ -43,7 +43,7 @@ h1{
     width: 200px;
     height: 200px;
     border-radius: 10px;
-    background-image: url(files/assets/rain-bg.jpg);
+    background-image: url("../files/assets/rain-bg.jpg");
     background-size: 200%;
 
 }
@@ -51,7 +51,7 @@ h1{
     width: 200px;
     height: 200px;
     border-radius: 10px;
-    background-image: url(files/assets/winter-bg.jpg);
+    background-image: url("../files/assets/winter-bg.jpg");
     background-size: 200%;
 }
 .container__buttonsBlock{
