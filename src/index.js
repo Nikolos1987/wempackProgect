@@ -1,4 +1,4 @@
-import {soundData} from "./soundData.js";
+import {soundData} from "./soundData";
 import './index.css'
 
 const startAudio = () => {

@@ -1,4 +1,5 @@
-export const soundData = [
+import { Data } from "./interfase"
+export const soundData:Data[] = [
     {
         name: "summer",
         path: "files/assets/sounds/summer.mp3",
