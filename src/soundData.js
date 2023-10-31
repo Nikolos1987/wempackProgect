@@ -11,7 +11,7 @@ export const soundData = [
         path: "files/assets/sounds/rain.mp3",
         chect: false,
         audio: new Audio("files/assets/sounds/rain.mp3"),
-        value: 50
+        value: 100
     },
 
     {

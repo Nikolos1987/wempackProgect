@@ -11,28 +11,55 @@
 <body>
   <div class="blur"></div>
   <div class="container">
-        <H1>Weather sounds</H1>
+    <H1>Weather sound</H1>
     <div class="container__buttonsBlock">
       <div class="wrapper">
-      <div>
-        <button class="summer" data-name="summer"></button>
-        <div class="slider">
-          <input class="range" type="range" id="fader" min="0" max="100" value="100" step="1" oninput="outputUpdate(value)">
+        <div class="wrapper__BTN">
+          <button class="summer" data-name="summer">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+              stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-sun">
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+          </button>
+          <div class="slider">
+          </div>
         </div>
-      </div>
-      <div>
-        <button class="rain" data-name="rain"></button>
-        <div class="slider">
-          <input class="range" type="range" id="fader" min="0" max="100" value="100" step="1" oninput="outputUpdate(value)">
-        </div>
-      </div>
-      <div>
-        <button class="winter" data-name="winter"></button>
-        <div class="slider">
-          <input class="range" type="range" id="fader" min="0" max="100" value="100" step="1" oninput="outputUpdate(value)">
-        </div>
-      </div>
-      </div>
+        <div class="wrapper__BTN">
+          <button class="rain" data-name="rain">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+              stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-cloud-rain">
+              <line x1="16" y1="13" x2="16" y2="21"></line>
+              <line x1="8" y1="13" x2="8" y2="21"></line>
+              <line x1="12" y1="15" x2="12" y2="23"></line>
+              <path d="M20 16.58A5 5 0 0 0 18 7h-1.26A8 8 0 1 0 4 15.25"></path>
+            </svg>
+          </button>
+           </div>
+        <div class="wrapper__BTN">
+          <button class="winter" data-name="winter">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+              stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+              class="feather feather-cloud-snow">
+              <path d="M20 17.58A5 5 0 0 0 18 8h-1.26A8 8 0 1 0 4 16.25"></path>
+              <line x1="8" y1="16" x2="8.01" y2="16"></line>
+              <line x1="8" y1="20" x2="8.01" y2="20"></line>
+              <line x1="12" y1="18" x2="12.01" y2="18"></line>
+              <line x1="12" y1="22" x2="12.01" y2="22"></line>
+              <line x1="16" y1="16" x2="16.01" y2="16"></line>
+              <line x1="16" y1="20" x2="16.01" y2="20"></line>
+            </svg>
+          </button>
+           </div>
     </div>
     <!-- <script src="src/index.js" type="module"></script>
     <script src="src/soundData.js" type="module"></script> -->

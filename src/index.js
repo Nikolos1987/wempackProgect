@@ -1,15 +1,14 @@
-import {soundData} from "./soundData.js";
+import { soundData } from "./soundData.js";
 import './index.css'
 
 const startAudio = () => {
     soundData.forEach(e => {
         if (e.chect) {
             e.audio.play();
-            e.value = e.value
+            e.value = 1
         }
         else {
             e.audio.pause();
-            outputUpdate(100)
         }
     })
 }
@@ -22,32 +21,45 @@ const start = (names) => {
             e.chect = false;
         }
     })
+    let index = soundData.findIndex(e => e.name == names)
     startAudio();
     chengebg(names);
     range(names);
+    renderUnput(index)
+
 }
 const btn = document.querySelectorAll('button');
 btn.forEach(e => e.addEventListener('click', (e) => {
     let name = e.target.dataset.name;
     start(name);
 }))
-function outputUpdate(vol) {
-    soundData.forEach(e => {
-        e.audio.volume = vol / 100;
-    });
-}
 
-let inout = document.querySelector('input').value
+
 const chengebg = (url) => {
     document.querySelector('.blur').style.backgroundImage = `url('files/assets/${url}-bg.jpg')`
 }
-const range = (names) => {
+const range = (index) => {
     let inpt = document.querySelectorAll('.range')
-    let index = soundData.findIndex(e => e.name == names)
-    inpt.forEach(e => {
-        e.style.display = 'none'
-    })
-    inpt[index].style.display = 'block'
+
+
+}
+function renderUnput(index) {
+    let el = document.querySelector('.slider')
+    if (el) {
+        el.remove()
+    }
+    let inpt = document.querySelectorAll('.wrapper__BTN')
+    inpt[index].insertAdjacentHTML("beforeend", `<div class="slider">
+    <input id="myrange" type="range" value="100" max="100" min="0">
+  </div>`)
+    soundData.forEach(e => {
+        e.audio.volume = 1
+    });
+    document.getElementById("myrange").addEventListener("change", function () {
+        console.log(this.value);
+        soundData[index].audio.volume = this.value / 100;
+    });
+
 }
 
 

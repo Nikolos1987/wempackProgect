@@ -61,9 +61,7 @@ h1{
 .wrapper{
     display: flex;
 }
-.range{
-    display: none;
-}
+
 H1{
     font-family: "Roboto-boldItalic";
     color: orange;
