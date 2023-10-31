@@ -24,7 +24,6 @@ const start = (names) => {
     let index = soundData.findIndex(e => e.name == names)
     startAudio();
     chengebg(names);
-    range(names);
     renderUnput(index)
 
 }
@@ -37,11 +36,6 @@ btn.forEach(e => e.addEventListener('click', (e) => {
 
 const chengebg = (url) => {
     document.querySelector('.blur').style.backgroundImage = `url('files/assets/${url}-bg.jpg')`
-}
-const range = (index) => {
-    let inpt = document.querySelectorAll('.range')
-
-
 }
 function renderUnput(index) {
     let el = document.querySelector('.slider')
