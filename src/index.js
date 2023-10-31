@@ -24,8 +24,7 @@ const start = (names) => {
     let index = soundData.findIndex(e => e.name == names)
     startAudio();
     chengebg(names);
-    renderUnput(index)
-
+    renderUnput(index);
 }
 const btn = document.querySelectorAll('button');
 btn.forEach(e => e.addEventListener('click', (e) => {
